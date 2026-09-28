@@ -32,8 +32,7 @@ export default function Home() {
       <section className="py-20 sm:py-28">
         <Container>
           <SectionHeading
-            eyebrow="Nos services"
-            title="Ce que nous faisons pour vous"
+            title="Nos services"
             intro="Trois domaines de l’électricité, à Civens, Feurs et dans les communes voisines."
           />
           <ServiceCards services={ACTIVE_SERVICES} className="mt-12" />

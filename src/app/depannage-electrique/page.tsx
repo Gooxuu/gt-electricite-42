@@ -13,7 +13,7 @@ const service = getService("depannage-electrique");
 export const metadata: Metadata = { title: service.title, description: service.teaser };
 
 const CONTENT = {
-  title: "Une panne\u00a0? Nous cherchons son origine",
+  title: "Panne électrique\u00a0: diagnostic et remise en état",
   eyebrow: "Notre intervention",
   heading: "Trouver la cause avant de réparer",
   intro: "Nous cherchons l’origine de la panne avant d’intervenir, puis nous réparons ou remplaçons ce qui doit l’être.",
