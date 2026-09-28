@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200">
+  <defs>
+    <linearGradient id="fond" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#57534e"/>
+      <stop offset="1" stop-color="#292524"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1200" fill="url(#fond)"/>
+  <g fill="none" stroke="#a8a29e" stroke-opacity="0.18" stroke-width="5">
+    <path d="M0 200H300L380 280H500"/>
+    <path d="M1600 1020H1340L1260 940H1120"/>
+  </g>
+  <rect x="540" y="240" width="520" height="720" rx="18" fill="#a8a29e"/>
+  <rect x="580" y="280" width="440" height="640" rx="10" fill="#d6d3d1"/>
+  <g fill="#e7e5e4" stroke="#78716c" stroke-width="8">
+    <circle cx="680" cy="420" r="46"/>
+    <circle cx="800" cy="420" r="46"/>
+    <circle cx="920" cy="420" r="46"/>
+    <circle cx="680" cy="580" r="46"/>
+    <circle cx="800" cy="580" r="46"/>
+    <circle cx="920" cy="580" r="46"/>
+  </g>
+  <g fill="none" stroke="#44403c" stroke-width="12" stroke-linecap="round">
+    <path d="M680 466c-30 110 130 150 50 330"/>
+    <path d="M800 626c40 90-120 140-30 280"/>
+    <path d="M920 626c-60 100 80 170-10 270"/>
+    <path d="M920 466c90 50 70 220 170 260"/>
+    <path d="M680 626c-80 60-40 200-150 250"/>
+  </g>
+</svg>

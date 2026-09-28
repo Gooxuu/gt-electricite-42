@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200">
+  <defs>
+    <linearGradient id="fond" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1e293b"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#facc15" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#facc15" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1200" fill="url(#fond)"/>
+<rect y="980" width="1600" height="220" fill="#1e293b"/>
+  <rect x="210" y="300" width="380" height="440" rx="10" fill="#cbd5e1"/>
+  <rect x="232" y="322" width="336" height="396" fill="#334155"/>
+  <rect x="232" y="322" width="336" height="68" fill="#94a3b8"/>
+  <rect x="232" y="346" width="336" height="4" fill="#334155"/><rect x="232" y="374" width="336" height="4" fill="#334155"/>
+  <rect x="190" y="250" width="420" height="56" rx="10" fill="#cbd5e1"/>
+  <path d="M900 0V280" stroke="#94a3b8" stroke-width="8"/>
+  <path d="M830 380 860 280H940L970 380Z" fill="#e2e8f0"/>
+  <circle cx="900" cy="398" r="30" fill="#fde047"/>
+  <circle cx="900" cy="400" r="200" fill="url(#halo)"/>
+  <rect x="1180" y="560" width="180" height="160" rx="24" fill="#0f172a" stroke="#475569" stroke-width="4"/>
+  <rect x="1200" y="580" width="62" height="54" rx="10" fill="#facc15"/><rect x="1278" y="580" width="62" height="54" rx="10" fill="#1e293b"/><rect x="1200" y="646" width="62" height="54" rx="10" fill="#1e293b"/><rect x="1278" y="646" width="62" height="54" rx="10" fill="#facc15"/>
+  <rect x="1160" y="770" width="170" height="300" rx="28" fill="#e2e8f0"/>
+  <rect x="1176" y="800" width="138" height="240" rx="14" fill="#0f172a"/>
+  <g fill="#facc15">
+    <rect x="1192" y="820" width="50" height="50" rx="10"/>
+    <rect x="1250" y="880" width="50" height="50" rx="10"/>
+  </g>
+  <g fill="#334155">
+    <rect x="1250" y="820" width="50" height="50" rx="10"/>
+    <rect x="1192" y="880" width="50" height="50" rx="10"/>
+    <rect x="1192" y="940" width="108" height="50" rx="10"/>
+  </g>
+  <g fill="none" stroke="#38bdf8" stroke-width="10" stroke-linecap="round">
+    <path d="M1110 760a50 50 0 0 1 50-50"/>
+    <path d="M1076 760a84 84 0 0 1 84-84"/>
+    <path d="M1042 760a118 118 0 0 1 118-118"/>
+  </g>
+  <circle cx="1360" cy="560" r="56" fill="#facc15"/>
+  <path d="M1329.2 560 1351.6 582.4 1393.6 537.6" fill="none" stroke="#0f172a" stroke-width="14.560000000000002" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

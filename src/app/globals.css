@@ -1,0 +1,195 @@
+@import "tailwindcss";
+
+/*
+ * Identité visuelle : seules les VALEURS changent d'un artisan à l'autre, jamais les noms
+ * (les composants n'utilisent que ces noms). `src/app/contrast.test.ts` vérifie la lisibilité.
+ */
+@theme {
+  /* À LA LIVRAISON : couleurs de l'artisan si logo ou charte fournis (aucun trouvé : palette du template en démo) */
+  /* Couleur principale : titres, pied de page, bandeaux */
+  --color-brand: #1e293b;
+  /* Fond sombre : héros, sections urgence, carte mise en avant */
+  --color-brand-deep: #0f172a;
+  /* Jaune électrique : boutons d'appel, accents sur fond sombre (texte brand-deep dessus) */
+  --color-accent: #facc15;
+  /* Survol des boutons jaunes */
+  --color-accent-light: #fde047;
+  /* Jaune foncé : texte et icônes jaunes sur fond clair */
+  --color-accent-dark: #a16207;
+  /* Bleu « courant » : uniquement sur fond sombre */
+  --color-highlight: #38bdf8;
+
+  /* Neutres */
+  --color-ink: #0f172a;
+  --color-muted: #475569;
+  --color-surface: #f1f5f9;
+  --color-line: #e2e8f0;
+
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-heading), ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+/* Focus : contour sombre + halo jaune, visible sur fond clair comme sur fond sombre */
+a:focus-visible,
+button:focus-visible,
+[role="slider"]:focus-visible {
+  outline: 2px solid var(--color-brand-deep);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 5px var(--color-accent);
+}
+
+/* Entrée progressive du texte du héros : CSS pur, joue même avant le chargement du JavaScript. */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+}
+
+.hero-rise {
+  animation: rise 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: var(--rise-delay, 0s);
+}
+
+/* Bouton d'appel : halo qui pulse autour du bouton (l'élément porte `relative`). */
+.cta-pulse::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  animation: call-pulse 2.5s ease-out infinite;
+}
+
+@keyframes call-pulse {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--color-accent) 55%, transparent);
+  }
+  70%,
+  100% {
+    box-shadow: 0 0 0 16px color-mix(in srgb, var(--color-accent) 0%, transparent);
+  }
+}
+
+/* Bouton d'appel : reflet qui balaie le bouton au survol. */
+.cta-shine {
+  background-image: linear-gradient(110deg, transparent 35%, rgb(255 255 255 / 0.55) 50%, transparent 65%);
+  background-size: 250% 100%;
+  background-position: 130% 0;
+  background-repeat: no-repeat;
+  transition:
+    background-position 0.8s ease,
+    background-color 0.2s ease;
+}
+
+.cta-shine:hover {
+  background-position: -30% 0;
+}
+
+/* Bouton d'appel : le combiné « sonne » brièvement toutes les 5 secondes. */
+.cta-ring {
+  transform-origin: 50% 60%;
+  animation: call-ring 5s ease-in-out infinite;
+}
+
+@keyframes call-ring {
+  0%,
+  84%,
+  100% {
+    transform: rotate(0);
+  }
+  86% {
+    transform: rotate(-16deg);
+  }
+  88% {
+    transform: rotate(14deg);
+  }
+  90% {
+    transform: rotate(-12deg);
+  }
+  92% {
+    transform: rotate(10deg);
+  }
+  94% {
+    transform: rotate(-5deg);
+  }
+}
+
+/* Pastille « urgence » qui pulse (l'élément porte `relative` et la couleur en `text-*`). */
+.pulse-dot::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: currentColor;
+  animation: dot-ping 1.6s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes dot-ping {
+  75%,
+  100% {
+    transform: scale(2.6);
+    opacity: 0;
+  }
+}
+
+/* Motif « circuit » : courant qui circule le long des pistes (pathLength = 200). */
+.circuit-current {
+  stroke-dasharray: 14 186;
+  animation: circuit-flow 6s linear infinite;
+}
+
+@keyframes circuit-flow {
+  to {
+    stroke-dashoffset: -200;
+  }
+}
+
+/* Barre d'appel mobile : glisse depuis le bas à l'apparition. */
+.callbar-in {
+  animation: callbar-in 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.6s both;
+}
+
+@keyframes callbar-in {
+  from {
+    transform: translateY(110%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .hero-rise,
+  .cta-ring,
+  .circuit-current,
+  .callbar-in {
+    animation: none;
+  }
+
+  .cta-pulse::before,
+  .pulse-dot::after {
+    content: none;
+    animation: none;
+  }
+
+  .cta-shine {
+    transition: none;
+  }
+
+  /* Comparateur avant/après : la poignée suit sans glisser (traité ici, pas en JS : voir BeforeAfterSlider). */
+  [data-rcs="root"] {
+    transition: none !important;
+  }
+}

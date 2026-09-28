@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200">
+  <defs>
+    <linearGradient id="fond" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1e293b"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#facc15" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#facc15" stop-opacity="0"/>
+    </radialGradient>
+    <symbol id="module" viewBox="0 0 46 150">
+      <rect x="1.5" y="1.5" width="43" height="147" rx="8" fill="#f8fafc" stroke="#94a3b8" stroke-width="3"/>
+      <rect x="13" y="40" width="20" height="44" rx="4" fill="#0f172a"/>
+    </symbol>
+  </defs>
+  <rect width="1600" height="1200" fill="url(#fond)"/>
+  <g fill="none" stroke="#94a3b8" stroke-opacity="0.2" stroke-width="5">
+    <path d="M0 200H300L380 280H460"/>
+    <path d="M0 1000H280L360 920H460"/>
+    <path d="M1600 160H1400L1320 240H1260"/>
+  </g>
+  <circle cx="820" cy="600" r="480" fill="url(#halo)"/>
+  <rect x="480" y="280" width="460" height="640" rx="40" fill="#e2e8f0"/>
+  <rect x="520" y="320" width="380" height="560" rx="24" fill="#cbd5e1"/>
+  <g fill="#94a3b8">
+    <rect x="540" y="430" width="340" height="12" rx="6"/>
+    <rect x="540" y="650" width="340" height="12" rx="6"/>
+  </g>
+  <use href="#module" x="546" y="360" width="46" height="150"/>
+  <use href="#module" x="602" y="360" width="46" height="150"/>
+  <use href="#module" x="658" y="360" width="46" height="150"/>
+  <use href="#module" x="714" y="360" width="46" height="150"/>
+  <use href="#module" x="770" y="360" width="46" height="150"/>
+  <use href="#module" x="826" y="360" width="46" height="150"/>
+  <use href="#module" x="546" y="580" width="46" height="150"/>
+  <use href="#module" x="602" y="580" width="46" height="150"/>
+  <use href="#module" x="658" y="580" width="46" height="150"/>
+  <use href="#module" x="714" y="580" width="46" height="150"/>
+  <use href="#module" x="770" y="580" width="46" height="150"/>
+  <use href="#module" x="826" y="580" width="46" height="150"/>
+  <g transform="rotate(35 1160 620)">
+    <rect x="1140" y="440" width="40" height="380" rx="20" fill="#cbd5e1"/>
+    <circle cx="1160" cy="430" r="64" fill="#cbd5e1"/>
+    <rect x="1144" y="360" width="32" height="80" rx="4" fill="#0f172a"/>
+  </g>
+  <g transform="rotate(-35 1160 620)">
+    <rect x="1130" y="400" width="60" height="200" rx="26" fill="#facc15"/>
+    <rect x="1152" y="600" width="16" height="260" rx="4" fill="#94a3b8"/>
+  </g>
+</svg>

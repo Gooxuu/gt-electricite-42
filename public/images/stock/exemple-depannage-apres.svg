@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200">
+  <defs>
+    <linearGradient id="fond" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1e293b"/>
+      <stop offset="1" stop-color="#0f172a"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#facc15" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#facc15" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#facc15" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#facc15" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1200" fill="url(#fond)"/>
+<rect y="960" width="1600" height="240" fill="#1e293b"/>
+  <path d="M704 440 480 960H1120L896 440Z" fill="url(#cone)"/>
+  <circle cx="800" cy="440" r="160" fill="url(#halo)"/>
+  <path d="M800 0V300" stroke="#94a3b8" stroke-width="8"/>
+  <path d="M690 420 740 300H860L910 420Z" fill="#e2e8f0"/>
+  <circle cx="800" cy="440" r="38" fill="#fde047"/>
+  <rect x="230" y="470" width="260" height="330" rx="22" fill="#cbd5e1"/>
+  <rect x="255" y="500" width="210" height="270" rx="12" fill="#e2e8f0"/>
+  <rect x="275" y="560" width="44" height="120" rx="8" fill="#f8fafc" stroke="#94a3b8" stroke-width="3"/>
+  <rect x="287" y="574" width="20" height="40" rx="5" fill="#facc15"/>
+  <rect x="338" y="560" width="44" height="120" rx="8" fill="#f8fafc" stroke="#94a3b8" stroke-width="3"/>
+  <rect x="350" y="574" width="20" height="40" rx="5" fill="#facc15"/>
+  <rect x="401" y="560" width="44" height="120" rx="8" fill="#f8fafc" stroke="#94a3b8" stroke-width="3"/>
+  <rect x="413" y="574" width="20" height="40" rx="5" fill="#facc15"/>
+  <rect x="1130" y="700" width="140" height="140" rx="22" fill="#f8fafc"/>
+  <circle cx="1175" cy="770" r="11" fill="#334155"/>
+  <circle cx="1225" cy="770" r="11" fill="#334155"/>
+  <circle cx="500" cy="470" r="60" fill="#facc15"/>
+  <path d="M467 470 491 494 536 446" fill="none" stroke="#0f172a" stroke-width="15.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

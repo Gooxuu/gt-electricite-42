@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200">
+  <defs>
+    <linearGradient id="fond" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#57534e"/>
+      <stop offset="1" stop-color="#292524"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1200" fill="url(#fond)"/>
+<rect y="930" width="1600" height="270" fill="#44403c"/>
+  <ellipse cx="980" cy="985" rx="470" ry="22" fill="#000000" fill-opacity="0.25"/>
+  <rect x="280" y="790" width="100" height="100" rx="16" fill="#d6d3d1"/>
+  <circle cx="315" cy="840" r="8" fill="#44403c"/>
+  <circle cx="345" cy="840" r="8" fill="#44403c"/>
+  <rect x="306" y="850" width="48" height="40" rx="8" fill="#f59e0b"/>
+  <path d="M330 890C330 962 420 976 520 966C602 958 610 872 640 824" fill="none" stroke="#f59e0b" stroke-width="12" stroke-linecap="round"/>
+  <path d="M560 905V820Q560 772 612 764L790 742 880 652Q906 626 952 626H1190Q1232 626 1258 660L1330 748Q1392 758 1398 812V905Z" fill="#a8a29e"/>
+  <path d="M815 742 893 664Q908 650 930 650H1040V742Z" fill="#57534e"/>
+  <path d="M1066 650H1185Q1208 650 1224 670L1282 742H1066Z" fill="#57534e"/>
+  <path d="M1053 650V898" stroke="#57534e" stroke-opacity="0.5" stroke-width="6"/>
+  <rect x="960" y="770" width="46" height="12" rx="6" fill="#57534e"/>
+  <rect x="1110" y="770" width="46" height="12" rx="6" fill="#57534e"/>
+  <rect x="562" y="790" width="46" height="22" rx="8" fill="#d6d3d1"/>
+  <rect x="1374" y="786" width="22" height="32" rx="6" fill="#b91c1c"/>
+  <rect x="626" y="806" width="30" height="24" rx="6" fill="#57534e"/>
+  <circle cx="720" cy="905" r="76" fill="#1c1917"/>
+  <circle cx="720" cy="905" r="34" fill="#78716c"/>
+  <circle cx="1240" cy="905" r="76" fill="#1c1917"/>
+  <circle cx="1240" cy="905" r="34" fill="#78716c"/>
+  <rect x="900" y="460" width="170" height="80" rx="16" fill="none" stroke="#e7e5e4" stroke-width="10"/>
+  <rect x="1070" y="484" width="16" height="32" rx="4" fill="#e7e5e4"/>
+  <rect x="916" y="476" width="30" height="48" rx="6" fill="#dc2626"/>
+</svg>
